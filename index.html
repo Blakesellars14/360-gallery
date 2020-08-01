@@ -22,12 +22,12 @@
        <img id ="studio" crossorigin="anonymous" src="images/recording_studio.jpg">
       
        <!-- 2D jpegs for tiles (clickable links)-->
-        <!--<img id="door-thumb" src="https://360.tsilhqotinlanguage.ca/tiles/Entrance_T_Radio.jpg"> 
-        <img id="lobby-thumb" crossorigin="anonymous" src="https://360.tsilhqotinlanguage.ca:8081/tiles/Lobby_T_Radio.jpg">
-        <img id="lab-thumb" crossorigin="anonymous" src="https://360.tsilhqotinlanguage.ca/tiles/Computer_lab_TRadio.jpg">
-        <img id="studio-thumb" crossorigin="anonymous" src="https://360.tsilhqotinlanguage.ca/tiles/Live_studio_T_Radio.jpg">
-        <img id="digi-thumb" crossorigin="anonymous" src="https://360.tsilhqotinlanguage.ca/tiles/Digitization_station_T_Radio.jpg">
-        <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio> -->
+        <img id="door-thumb" src="images/Entrance.png"> 
+        <img id="lobby-thumb" crossorigin="anonymous" src="images/Lobby.png">
+        <img id="lab-thumb" crossorigin="anonymous" src="images/Computer_lab.png">
+        <img id="studio-thumb" crossorigin="anonymous" src="images/Studio.png">
+        <img id="digi-thumb" crossorigin="anonymous" src="">
+        <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
 
         <!-- Image link template to be reused. -->
         <script id="link" type="text/html">
@@ -49,10 +49,10 @@
 
       <!-- Image links. -->
       <a-entity id="links">
-        <a-entity template="src: #link" data-src="#door" data-thumb="#door-thumb" layout="type: line" rotation="0 0 0" position="0 0 -4"></a-entity>
-      <a-entity template="src: #link" data-src="#lobby" data-thumb="#lobby-thumb" layout="type: line" rotation="0 -90 0" position="4 0 0"></a-entity> -->
-        <a-entity template="src: #link" data-src="#lab" data-thumb="#lab-thumb" layout="type: line" rotation="0 180 0" position="0 0 4"></a-entity> 
-        <a-entity template="src: #link" data-src="#studio" data-thumb="#studio-thumb" layout="type: line" rotation="0 90 0" position="-4 0 0"></a-entity>
+        <a-entity template="src: #link" data-src="#door" data-thumb="#door-thumb" layout="type: line" rotation="0 -90 0" position="4 .5 0"></a-entity>
+      <a-entity template="src: #link" data-src="#lobby" data-thumb="#lobby-thumb" layout="type: line" rotation="0 0 0" position="0 .5 -4"></a-entity> -->
+        <a-entity template="src: #link" data-src="#lab" data-thumb="#lab-thumb" layout="type: line" rotation="0 180 0" position="0 .5 4"></a-entity> 
+        <a-entity template="src: #link" data-src="#studio" data-thumb="#studio-thumb" layout="type: line" rotation="0 90 0" position="-4 .5 0"></a-entity>
        <!-- <a-entity template="src: #link" data-src="#digi" data-thumb="#digi-thumb" layout="type: line" rotation="0 -90 0" position="0 0 4"></a-entity> -->
       </a-entity>
 
